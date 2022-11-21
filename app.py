@@ -8,7 +8,7 @@ from geopy import distance
 app = Flask(__name__)
 
 # cred = credentials.Certificate('/Users/aj/Downloads/bright-pro-firebase-adminsdk-1ao7r-920e09b64c.json')
-cred = credentials.Certificate('bright-app/bright-pro-firebase-adminsdk-1ao7r-920e09b64c.json')
+cred = credentials.Certificate('./bright-pro-firebase-adminsdk-1ao7r-920e09b64c.json')
 firebase_admin.initialize_app(cred)
 db = firestore.client()
 doc_ref = db.collection(u'venues')
