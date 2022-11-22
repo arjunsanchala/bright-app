@@ -4,9 +4,13 @@ yelp.com is a website where we can find restaurant details around the world. In 
 
 ## How to type query in the URL?
 - To search for a specific restaurant: /search?name=< name of the restaurant >
+  - Returns a single document.
 - To search for restaurants above specific rating eg 4.5: /search?rating=4.5 
+  - Returns list of sorted documents by rating in descending order.
 - To search for restarants of specific price_type eg $$$ : /search?price_type=$$$
+  - Returns list of sorted documents by restaurant name in ascending order.
 - To search for restaurants near a specific location: /search?latitude=< lat >&longitude< lon >
+  - Returns nearest restaurants within 5km radius. In 'Nearest restaurant first' order.
 
 
 ## Lat Lon endpoint:
