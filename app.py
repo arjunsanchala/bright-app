@@ -43,7 +43,7 @@ def index():
         rating = args.get('rating')
 
         # Firebase query.
-        ml = doc_ref.where(u'restaurant_rating', u'>=', rating)
+        ml = doc_ref.where(u'restaurant_rating', u'>=', float(rating))
         docs = ml.stream()
         dummy = []
 
